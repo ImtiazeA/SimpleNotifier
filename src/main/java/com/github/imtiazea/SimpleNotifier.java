@@ -25,17 +25,23 @@ public class SimpleNotifier {
 
         trayIcon.displayMessage(notificationCaption, notificationText, messageType);
 
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         tray.remove(trayIcon);
     }
 
-//    public static void main(String[] args) {
-//        SimpleNotifier simpleNotifier =  new SimpleNotifier();
-//
-//        String successMessage = "Upload Successful!";
-//        String successDetailsMessage = "Link copied to clipboard";
-//        TrayIcon.MessageType successMessageType = TrayIcon.MessageType.INFO;
-//
-//        simpleNotifier.pushNotification(successMessage, successDetailsMessage, successMessageType);
-//
-//    }
+    public static void main(String[] args) {
+        SimpleNotifier simpleNotifier =  new SimpleNotifier();
+
+        String successMessage = "Upload Successful!";
+        String successDetailsMessage = "Link copied to clipboard";
+        TrayIcon.MessageType successMessageType = TrayIcon.MessageType.INFO;
+
+        simpleNotifier.pushNotification(successMessage, successDetailsMessage, successMessageType);
+
+    }
 }

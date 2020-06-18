@@ -6,7 +6,7 @@
 
     <groupId>com.github.imtiazea</groupId>
     <artifactId>simple-notifier</artifactId>
-    <version>0.01</version>
+    <version>0.02</version>
     <build>
         <plugins>
             <plugin>
