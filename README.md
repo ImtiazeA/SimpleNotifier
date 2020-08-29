@@ -16,6 +16,6 @@ SimpleNotifier for Java /Spring Apps for Windows
 	<dependency>
 	    <groupId>com.github.ImtiazeA</groupId>
 	    <artifactId>SimpleNotifier</artifactId>
-	    <version>0.01</version>
+	    <version>{JitPack-Version}</version>
 	</dependency>
 ```
